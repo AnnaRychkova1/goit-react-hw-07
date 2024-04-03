@@ -38,7 +38,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (values, actions) => {
-    onAddContacts(values.name, values.number);
+    onAddContacts(values);
     actions.resetForm();
   };
 
