@@ -1,0 +1,43 @@
+.contactForm {
+  width: 380px;
+  border: 2px solid black;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.labelForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.labelText {
+  font-size: 18px;
+}
+
+.formField {
+  padding: 8px;
+  padding-left: 12px;
+  border-radius: 4px;
+  font-size: 18px;
+  border: 2px solid var(--primary-color);
+}
+
+.formButton {
+  background-color: rgb(228, 227, 227);
+  color: var(--primary-color);
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+  border: 2px solid var(--second-color);
+  height: 36px;
+  margin: auto;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
