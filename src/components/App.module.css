@@ -1,6 +1,7 @@
 .container {
   min-width: 320px;
   max-width: 428px;
+  margin: 0 auto;
   padding: 16px;
   border-radius: 20px;
   background-color: var(--second-color);
