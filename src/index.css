@@ -1,11 +1,14 @@
 :root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 15px;
   font-family: sans-serif;
+  color: var(--primary-color);
+  background-color: var(--primary-color);
 
-  --primary-color: #0e0e0e;
-  --second-color: rgb(128, 128, 128);
+  --primary-color: #f9e3cc;
+  --second-color: #261605;
+  --accent-color: #f57a38;
 }
 
 h1,
@@ -44,5 +47,5 @@ button {
 
 button:hover,
 button:focus {
-  background-color: rgb(233, 243, 243);
+  background-color: var(--accent-color);
 }

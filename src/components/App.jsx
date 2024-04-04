@@ -1,11 +1,11 @@
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import css from './App.module.css';
+import { selectFilteredContacts } from '../redux/contactsSlice';
+import { fetchContacts } from '../redux/contactsOps';
 import ContactList from './ContactList/ContactList';
 import SearchBox from './SearchBox/SearchBox';
 import ContactForm from './ContactForm/ContactForm';
-import css from './App.module.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { selectFilteredContacts } from '../redux/contactsSlice';
-import { useEffect } from 'react';
-import { fetchContacts } from '../redux/contactsOps';
 
 function App() {
   const dispatch = useDispatch();
@@ -17,9 +17,11 @@ function App() {
 
   return (
     <div className={css.container}>
-      <h1 className={css.title}>Phonebook</h1>
-      <ContactForm />
-      <SearchBox />
+      <div className={css.functionalCont}>
+        <h1 className={css.title}>Phonebook</h1>
+        <ContactForm />
+        <SearchBox />
+      </div>
       <ContactList contacts={contacts} />
     </div>
   );

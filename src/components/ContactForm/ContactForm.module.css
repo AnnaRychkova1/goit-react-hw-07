@@ -1,8 +1,17 @@
 .contactForm {
-  width: 380px;
-  border: 2px solid black;
+  max-width: 380px;
+  min-width: 320px;
+  border: 2px solid var(--primary-color);
   padding: 16px;
-  border-radius: 4px;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 386px) {
+  .contactForm {
+    min-width: auto;
+    max-width: 100%;
+    width: 380px;
+  }
 }
 
 .labelForm {
@@ -20,21 +29,24 @@
 .formField {
   padding: 8px;
   padding-left: 12px;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 18px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--second-color);
+  background-color: var(--primary-color);
 }
 
 .formButton {
-  background-color: rgb(228, 227, 227);
-  color: var(--primary-color);
-  padding: 8px;
+  color: var(--second-color);
+  padding: 8px 12px;
   text-align: center;
-  border-radius: 4px;
   font-size: 18px;
-  border: 2px solid var(--second-color);
-  height: 36px;
+  height: 42px;
   margin: auto;
+  margin-top: 40px;
+  border-radius: 8px;
+  border: 2px solid var(--second-color);
+  background-color: var(--primary-color);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .errorMessage {

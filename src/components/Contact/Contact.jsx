@@ -13,12 +13,12 @@ const Contact = ({ name, number, id }) => {
     <div className={css.contactInfo}>
       <div className={css.contactData}>
         <p className={css.contactInfoItem}>
-          <IoPersonSharp size={16} />
+          <IoPersonSharp size={16} color="#ef5c0d" />
           <span>{name}</span>
         </p>
 
         <p className={css.contactInfoItem}>
-          <FaPhone size={16} />
+          <FaPhone size={16} color="#ef5c0d" />
           <span>{number}</span>
         </p>
       </div>
