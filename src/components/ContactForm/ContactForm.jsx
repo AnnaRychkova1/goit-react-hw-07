@@ -69,7 +69,7 @@ const ContactForm = () => {
           <span className={css.labelText}>Number</span>
           <Field
             className={css.formField}
-            placeholder="097-459-12-56"
+            placeholder="097-123-45-67"
             type="text"
             name="number"
           />

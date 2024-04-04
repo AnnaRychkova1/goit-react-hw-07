@@ -11,7 +11,7 @@ const Loader = () => {
       ariaLabel="magnifying-glass-loading"
       wrapperStyle={{}}
       wrapperClass="magnifying-glass-wrapper"
-      glassColor="#ffff00"
+      glassColor="#f9e3cc"
       color="#ef5c0d"
     />
   );
